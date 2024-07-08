@@ -48,7 +48,6 @@ export default {
 }
 
 .mailContainer h3 {
-    color: #9e9e9eb3;
     margin-left: 1rem;
     font-size: .8rem;
 }

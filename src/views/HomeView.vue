@@ -2,6 +2,7 @@
 import TopBar from '../components/TopBar.vue';
 import Profile from '../components/Profile.vue';
 import Slogan from '../components/Slogan.vue';
+import Carousel from '../components/Carousel.vue';
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import Slogan from '../components/Slogan.vue';
     <TopBar />
     <Profile />
     <Slogan textSlogan="Versatility and curiosity: exploring without limits."/>
-    
+    <Carousel />
     <Slogan textSlogan="A journey of constant evolution"/>
   </main>
 </template>

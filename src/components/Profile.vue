@@ -21,14 +21,14 @@
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
-    padding: 2vh;
+    padding: 2vh 0;
     max-height: 500px;
 }
 
 .photoContainer {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     border-radius: 50%;
-    filter: drop-shadow(0 0 0.4rem rgba(250, 235, 215, 0.25));
+    filter: drop-shadow(0 0 0.4rem #faebd740);
 }
 
 .photoContainer img {

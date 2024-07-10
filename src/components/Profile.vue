@@ -1,7 +1,7 @@
 <template>
 <div class="profileContainer">
     <div class="photoContainer">
-        <img src="./icons/Profile.png" alt="Profile">
+        <img src="./icons/Profile.jpg" alt="Profile">
     </div>
     <div class="messageContainer">
         <h3>Hi, I'm David 👋</h3>
@@ -27,14 +27,19 @@
     }
 
     .photoContainer {
-        margin: 1.5rem 0;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
         border-radius: 50%;
         filter: drop-shadow(0 0 0.4rem #faebd740);
     }
 
     .photoContainer img {
-        max-width: 150px;
+        max-height: 120px;
         border-radius: 50%;
+    }
+
+    .messageContainer h3 {
+        font-size: 1rem;
     }
 }
 </style>

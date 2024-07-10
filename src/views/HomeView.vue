@@ -1,27 +1,52 @@
 <script setup>
 import TopBar from '../components/TopBar.vue';
 import Profile from '../components/Profile.vue';
-import Slogan from '../components/Slogan.vue';
-import Carousel from '../components/Carousel.vue';
-import TopicCards from '../components/TopicCards.vue';
+import RelevantText from '../components/RelevantText.vue';
+import Experience from '../components/Experience.vue';
+import CardListProjects from '../components/CardListProjects.vue';
+import CardListStudy from '../components/CardListStudy.vue';
 </script>
 
 <template>
   <main>
     <TopBar />
     <Profile />
-    <Slogan textSlogan="Versatility and curiosity: exploring without limits."/>
-    <Carousel />
-    <Slogan textSlogan="A journey of constant evolution"/>
-    <TopicCards />
+    <RelevantText relevantText="Versatility and curiosity: exploring without limits."/>
+    <Experience />
+    <RelevantText relevantText="A journey of constant evolution"/>
+    <CardListProjects/>
+    <RelevantText relevantText="Lifelong learning: embracing knowledge at every step" />
+    <CardListStudy />
   </main>
 </template>
+
+<style scoped>
+main {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main>* {
+  height: calc(100vh/7);
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  /* background-color: rgba(128, 0, 128, 0.445); */
+}
+
+</style>
 
 <script>
   export default {
     name: 'HomeView',
     components: {
-      Slogan,
+      Slogan: RelevantText,
     },
   };
 </script>

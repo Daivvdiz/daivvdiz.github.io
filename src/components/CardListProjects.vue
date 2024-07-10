@@ -1,36 +1,37 @@
 <script setup>
-import TopicCard from './Card.vue'
+import ProjectCard from './Card.vue'
 </script>
 
 <template>
   <div class="topicCardsContainer">
-    <TopicCard v-for="(card, index) in cards" :key="index" :title="card.title" :projectNames="card.projectNames"/>
+    <ProjectCard v-for="(card, index) in cards" :key="index" :name="card.title" :contents="card.projectNames" :routeProfile="card.routeProfile" />
   </div>
 </template>
 
 <script>
   export default {
-    components: {
-      TopicCard
-    },
     data() {
       return {
         cards: [
           {
             title: 'Data Analytics',
-            projectNames: ['Project 1', 'Project 2']
+            projectNames: ['Project 1', 'Project 2'],
+            routeProfile: [],
           },
           {
             title: 'Development',
-            projectNames: ['Project 1', 'Project 2']
+            projectNames: ['Project ', 'Project 2'],
+            routeProfile: [],
           },
           {
             title: 'Automatization',
-            projectNames: ['Project 1', 'Project 2']
+            projectNames: ['Project 1', 'Project 2'],
+            routeProfile: [],
           },
           {
             title: 'Personal',
-            projectNames: ['Project 1', 'Project 2']
+            projectNames: ['Project 1', 'Project 2'],
+            routeProfile: [],
           },
 
         ]
@@ -43,6 +44,7 @@ import TopicCard from './Card.vue'
 .topicCardsContainer {
   display: flex;
   width: 100%;
+  height: auto;
   justify-content: space-between;
   margin: 5vh 0;
 }

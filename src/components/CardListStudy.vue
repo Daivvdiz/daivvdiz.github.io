@@ -1,0 +1,45 @@
+<script setup>
+import StudyCard from './Card.vue'
+</script>
+
+<template>
+  <div class="topicCardsContainer">
+    <StudyCard v-for="(card, index) in cards" :key="index" :name="card.title" :contents="card.studyTitle" :routeProfile="card.routeProfile" />
+  </div>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        cards: [
+          {
+            title: 'U. San Buenaventura',
+            studyTitle: ["Bachelor's Degree in Mechatronics Engineering"],
+            routeProfile: [],
+          },
+          {
+            title: 'SENA',
+            studyTitle: ['Industrial Automation Technologist', 'Software Programming Technician'],
+            routeProfile: [],
+          },
+          {
+            title: 'Courses',
+            studyTitle: ['Coursera', 'Platzi'],
+            routeProfile: ['https://google.com','https://platzi.com/p/Daivvdiz/'],
+          },
+        ]
+      }
+    }
+  };
+</script>
+
+<style scoped>
+.topicCardsContainer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  margin: 5vh 0;
+}
+</style>

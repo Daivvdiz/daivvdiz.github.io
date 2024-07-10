@@ -24,47 +24,48 @@ export default {
 <style scoped>
 @media screen and (min-width: 1024px){
     .topContainer {
-        border-bottom: 1px solid #9e9e9eb3;
+        border-bottom: 1px solid #FFFFFF;
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
         width: 100%;
-        height: 10vh;
-        padding: 0 1rem
+        height: 100%;
+        max-height: 70px;
     }
-
+    
     .topContainer>div {
         display: flex;
         width: 50%;
         align-items: center;
+        margin-top: -1rem
     }
-
+    
     .leftContainer {
         display: flex;
         justify-content: start;
     }
-
+    
     .mailContainer {
         display: flex;
         align-items: center;
     }
-
+    
     .mailContainer h3 {
         margin-left: 1rem;
         font-size: .8rem;
-    }
-
-    .mailContainer img {
-        width: 2vh
+        font-weight: 300;
+        letter-spacing: 1px;
     }
 
     .rightContainer {
         display: flex;
         justify-content: end;
+        padding-right: 2rem;
     }
-
-    .rightContainer img {
+    
+    .mailContainer img, .rightContainer img {
         width: 2vh;
-        margin: 0 1rem;
+        margin-left: 1rem;
     }
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
     <div class="topicCard">
-        <h1>{{ title }}</h1>
+        <h1>{{ name }}</h1>
         <div class="projectsContainer">
             <ul>
-                <li v-for="(projectName, index) in projectNames" :key="index"><a href="">{{ projectName }}</a></li>
+                <li v-for="(content, index) in contents" :key="index"><a :href="routeProfile[index]" target="_blank">{{ content }}</a></li>
             </ul>
         </div>
     </div>
@@ -12,13 +12,17 @@
 <script>
     export default {
         props: {
-            title: {
+            name: {
                 type: String,
                 required: true
             },
-            projectNames: {
+            contents: {
                 type: Array,
                 required: true
+            },
+            routeProfile: {
+                type: Array,
+                required: false,
             }
         }
     };
@@ -62,11 +66,13 @@
         display: flex;
         width: 100%;
         text-decoration: none;
+        cursor: pointer;
     }
 
     .topicCard a:hover {
         background-color: #9E9E9E;
         color: #1A1A1A;
+        /* cursor: pointer; */
     }
 }
 </style>

@@ -15,22 +15,22 @@ import ProjectCard from './Card.vue'
         cards: [
           {
             title: 'Data Analytics',
-            projectNames: ['Project 1', 'Project 2'],
+            projectNames: ['Sales Insight', 'Market Trends', 'Customer Segmentation'],
             routeProfile: [],
           },
           {
             title: 'Development',
-            projectNames: ['Project ', 'Project 2'],
+            projectNames: ['Task Manager', 'Weather App', 'E-commerce Site', 'Portfolio Website'],
             routeProfile: [],
           },
           {
-            title: 'Automatization',
-            projectNames: ['Project 1', 'Project 2'],
+            title: 'Automation',
+            projectNames: ['Home Automation', 'Factory Control'],
             routeProfile: [],
           },
           {
             title: 'Personal',
-            projectNames: ['Project 1', 'Project 2'],
+            projectNames: ['Daily Journal', 'Fitness Tracker', 'Travel Blog', 'Recipe Book', 'Budget Planner'],
             routeProfile: [],
           },
 

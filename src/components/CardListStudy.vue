@@ -15,18 +15,18 @@ import StudyCard from './Card.vue'
         cards: [
           {
             title: 'U. San Buenaventura',
-            studyTitle: ["Bachelor's Degree in Mechatronics Engineering"],
+            studyTitle: ["Mechatronics Engineering"],
             routeProfile: [],
           },
           {
             title: 'SENA',
-            studyTitle: ['Industrial Automation Technologist', 'Software Programming Technician'],
+            studyTitle: ['Software Programming', 'Industrial Automation'],
             routeProfile: [],
           },
           {
             title: 'Courses',
             studyTitle: ['Coursera', 'Platzi'],
-            routeProfile: ['https://google.com','https://platzi.com/p/Daivvdiz/'],
+            routeProfile: ['/','https://platzi.com/p/Daivvdiz/'],
           },
         ]
       }

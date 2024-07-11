@@ -22,7 +22,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    max-width: 50%;
+    /* max-width: 50%; */
   }
 
   .sloganContainer h2 {

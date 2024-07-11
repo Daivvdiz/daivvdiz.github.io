@@ -3,7 +3,7 @@
         <h1>{{ name }}</h1>
         <div class="projectsContainer">
             <ul>
-                <li v-for="(content, index) in contents" :key="index"><a :href="routeProfile[index]" target="_blank">{{ content }}</a></li>
+                <li v-for="(content, index) in contents" :key="index"><a :href="routeProfile[index]" target="_blank">{{ '→ '+content }}</a></li>
             </ul>
         </div>
     </div>
@@ -57,6 +57,7 @@
     .topicCard li {
         list-style: none;
         margin: 0.5rem 0;
+        margin-left: .2rem;
     }
 
     .topicCard a {

@@ -1,6 +1,7 @@
 <script setup>
 import TopBar from '../components/TopBar.vue';
 import Profile from '../components/Profile.vue';
+import AboutMeButton from '../components/AboutMeButton.vue';
 import RelevantText from '../components/RelevantText.vue';
 import Experience from '../components/Experience.vue';
 import CardListProjects from '../components/CardListProjects.vue';
@@ -11,7 +12,8 @@ import CardListStudy from '../components/CardListStudy.vue';
   <main>
     <TopBar />
     <Profile />
-    <RelevantText relevantText="Versatility and curiosity: exploring without limits."/>
+    <AboutMeButton />
+    <RelevantText relevantText="Versatility and curiosity: exploring without \nlimits."/>
     <Experience />
     <RelevantText relevantText="A journey of constant evolution"/>
     <CardListProjects/>

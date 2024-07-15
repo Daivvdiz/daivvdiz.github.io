@@ -19,7 +19,7 @@ import StudyCard from './Card.vue'
             routeProfile: [],
           },
           {
-            title: 'SENA',
+            title: 'Sena',
             studyTitle: ['Software Programming', 'Industrial Automation'],
             routeProfile: [],
           },

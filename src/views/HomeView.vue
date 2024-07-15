@@ -12,12 +12,12 @@ import CardListStudy from '../components/CardListStudy.vue';
   <main>
     <TopBar />
     <Profile />
-    <AboutMeButton />
-    <RelevantText relevantText="Versatility and curiosity: exploring without \nlimits."/>
+    <!-- <AboutMeButton /> -->
+    <RelevantText :relevantText="'Versatility and curiosity: exploring without\nlimits.'"/>
     <Experience />
-    <RelevantText relevantText="A journey of constant evolution"/>
+    <RelevantText :relevantText="'A journey of constant evolution'"/>
     <CardListProjects/>
-    <RelevantText relevantText="Lifelong learning: embracing knowledge at every step" />
+    <RelevantText :relevantText="'Lifelong learning: embracing knowledge at \nevery step'" />
     <CardListStudy />
   </main>
 </template>
@@ -38,7 +38,7 @@ main>* {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1.2rem 0;
   /* background-color: rgba(128, 0, 128, 0.445); */
 }
 
@@ -49,6 +49,6 @@ main>* {
     name: 'HomeView',
     components: {
       Slogan: RelevantText,
-    },
+    }
   };
 </script>

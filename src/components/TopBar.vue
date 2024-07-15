@@ -28,9 +28,10 @@ export default {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        width: 100%;
+        width: 70%;
         height: 100%;
-        max-height: 70px;
+        max-height: 90px;
+        padding: 1rem 0;
     }
     
     .topContainer>div {
@@ -64,7 +65,7 @@ export default {
     }
     
     .mailContainer img, .rightContainer img {
-        width: 2vh;
+        width: 2.5vh;
         margin-left: 1rem;
     }
 }

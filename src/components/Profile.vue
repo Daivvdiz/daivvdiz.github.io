@@ -4,7 +4,7 @@
         <img src="./icons/Profile.jpg" alt="Profile">
     </div>
     <div class="messageContainer">
-        <h3>Hi, I'm David 👋</h3>
+        <h3>Hi, I'm David</h3>
     </div>
 </div>
 </template>
@@ -39,7 +39,8 @@
     }
 
     .messageContainer h3 {
-        font-size: 1rem;
+        font-size: .8rem;
+        letter-spacing: 1px;
     }
 }
 </style>

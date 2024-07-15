@@ -45,7 +45,7 @@ import ProjectCard from './Card.vue'
   display: flex;
   width: 100%;
   height: auto;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 5vh 0;
 }
 </style>

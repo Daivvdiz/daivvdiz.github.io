@@ -1,6 +1,6 @@
 <template>
     <div class="sloganContainer">
-        <h2>{{ relevantText }}</h2>
+        <h2 v-html="formattedText"></h2>
     </div>
 </template>
 
@@ -10,6 +10,11 @@
       relevantText: {
         type: String,
         required: true,
+      }
+    },
+    computed:{
+      formattedText() {
+        return this.relevantText.replace(/\n/g, '<br />');
       }
     },
   };
@@ -29,7 +34,7 @@
     font-size: 3rem;
     padding: 1rem;
     text-align: center;
-    background: -webkit-linear-gradient(275deg, #f8e6cc 70%,#ffffff 100%);
+    background: -webkit-linear-gradient(275deg,#9E9E9E 0%, #F4F4F4 70%,#9E9E9E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

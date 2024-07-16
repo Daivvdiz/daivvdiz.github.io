@@ -44,6 +44,23 @@ main {
 }
 </style>
 
+<style>
+@media screen and (max-width: 1024px){
+  .topicCardsContainer {
+    display: flex;
+    width: 100%;
+    padding: 3rem 0;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .listCardContainer{
+    display: flex;
+    overflow-x: scroll;
+  }
+}
+</style>
+
 <script>
   export default {
     name: 'HomeView',

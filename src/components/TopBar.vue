@@ -2,14 +2,14 @@
     <div class="topContainer">
         <div class="leftContainer">
             <div class="mailContainer">
-                <img src="./icons/Mail.png" alt="Mail">
+                <img src="@/assets/icons/Mail.png" alt="Mail">
                 <h3>daivvdiz@gmail.com</h3>
             </div>
         </div>
         <div class="rightContainer">
-            <img src="./icons/Linkedin.png" alt="Linkedin">
-            <img src="./icons/GitHub.png" alt="GitHub">
-            <img src="./icons/Instagram.png" alt="Instagram">
+            <a href="https://www.linkedin.com/in/daivvdiz/" target="_blank"><img src="@/assets/icons/Linkedin.png" alt="Linkedin"></a>
+            <a href="https://github.com/daivvdiz" target="_blank"><img src="@/assets/icons/GitHub.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/daivdiz/" target="_blank"><img src="@/assets/icons/Instagram.png" alt="Instagram"></a>
         </div>
     </div>
 </template>
@@ -67,6 +67,10 @@ export default {
     .mailContainer img, .rightContainer img {
         width: 2.5vh;
         margin-left: 1rem;
+    }
+
+    .rightContainer a:hover {
+        filter: invert(.4)
     }
 }
 </style>

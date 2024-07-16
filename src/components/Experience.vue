@@ -1,13 +1,13 @@
 <template>
     <div class="carouselContainer">
         <div class="iconItem">
-            <img src="./icons/Emcocables.png" alt="Emcocables">
+            <a href="https://emcocables.co/" target="_blank"><img src="@/assets/icons/Emcocables.png" alt="Emcocables"></a>
         </div>
         <div class="iconItem">
-            <img src="./icons/Universidad.png" alt="Universidad">
+            <a href="https://www.usbbog.edu.co/" target="_blank"><img src="@/assets/icons/Universidad.png" alt="Universidad"></a>
         </div>
         <div class="iconItem">
-            <img src="./icons/Sena.png" alt="SENA">
+            <a href="https://www.sena.edu.co/es-co/Paginas/default.aspx" target="_blank"><img src="@/assets/icons/Sena.png" alt="SENA"></a>
         </div>
     </div>
 </template>
@@ -25,8 +25,12 @@
         justify-content: space-evenly;
         padding: 3rem 0;
     }
-    
-    .carouselContainer img {
+
+    .carouselContainer a:hover {
+        filter: invert(.4)
+    }
+
+    .carouselContainer a img {
         max-height: 80px;
         margin: 0 2rem;
     }

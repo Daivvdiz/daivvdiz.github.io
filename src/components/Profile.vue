@@ -1,7 +1,7 @@
 <template>
 <div class="profileContainer">
     <div class="photoContainer">
-        <img src="./icons/Profile.jpg" alt="Profile">
+        <img src="@/assets/icons/Profile.jpg" alt="Profile">
     </div>
     <div class="messageContainer">
         <h3>Hi, I'm David</h3>

@@ -32,12 +32,10 @@
         display: flex;
         justify-content: start;
         width: 100%;
-        margin-top: 5rem;
-        padding-bottom: 5rem;
-        padding-left: 10rem;
     }
 
     .infoContainer {
+        margin-left: 5rem;
     }
 
     .infoContainer>div {

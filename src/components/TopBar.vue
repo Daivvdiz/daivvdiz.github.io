@@ -73,4 +73,5 @@ export default {
         filter: invert(.4)
     }
 }
+
 </style>

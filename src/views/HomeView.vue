@@ -1,7 +1,6 @@
 <script setup>
 import TopBar from '../components/TopBar.vue';
 import Profile from '../components/Profile.vue';
-import AboutMeButton from '../components/AboutMeButton.vue';
 import RelevantText from '../components/RelevantText.vue';
 import Experience from '../components/Experience.vue';
 import CardListProjects from '../components/CardListProjects.vue';
@@ -10,7 +9,7 @@ import CardListStudy from '../components/CardListStudy.vue';
 
 <template>
   <main>
-    <TopBar />
+    <TopBar v-if="showTopBar"/>
     <Profile />
     <!-- <AboutMeButton /> -->
     <RelevantText :relevantText="'Versatility and curiosity: exploring without\nlimits.'"/>
@@ -23,15 +22,15 @@ import CardListStudy from '../components/CardListStudy.vue';
 </template>
 
 <style scoped>
-@media screen and (min-width: 1024px){
-  main {
-    background-color: rgba(0, 0, 0, 0.85);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+main {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+@media screen and (min-width: 1024px){
   main>* {
     height: calc(100vh/7);
     width: 100%;
@@ -50,6 +49,12 @@ import CardListStudy from '../components/CardListStudy.vue';
     name: 'HomeView',
     components: {
       Slogan: RelevantText,
-    }
+      TopBar,
+    },
+    computed: {
+      showTopBar() {
+        return this.windowWidth >= 1024;
+      }
+    },
   };
 </script>

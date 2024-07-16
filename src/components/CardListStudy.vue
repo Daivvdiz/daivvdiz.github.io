@@ -4,7 +4,9 @@ import StudyCard from './Card.vue'
 
 <template>
   <div class="topicCardsContainer">
-    <StudyCard v-for="(card, index) in cards" :key="index" :name="card.title" :contents="card.studyTitle" :routeProfile="card.routeProfile" />
+    <div class="listCardContainer">
+      <StudyCard v-for="(card, index) in cards" :key="index" :name="card.title" :contents="card.studyTitle" :routeProfile="card.routeProfile" />
+    </div>
   </div>
 </template>
 

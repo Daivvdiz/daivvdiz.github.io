@@ -46,6 +46,21 @@ main {
 </style>
 
 <style>
+@media screen and (min-width: 1024px){
+  .topicCardsContainer {
+    display: flex;
+    width: 100%;
+    padding: 10rem 0;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .listCardContainer{
+    display: flex;
+    overflow-x: hidden;
+  }
+}
+
 @media screen and (max-width: 1024px){
   .topicCardsContainer {
     display: flex;

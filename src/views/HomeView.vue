@@ -5,19 +5,20 @@ import RelevantText from '../components/RelevantText.vue';
 import Experience from '../components/Experience.vue';
 import CardListProjects from '../components/CardListProjects.vue';
 import CardListStudy from '../components/CardListStudy.vue';
+import BottomBar from '../components/BottomBar.vue';
 </script>
 
 <template>
   <main>
     <TopBar v-if="showTopBar"/>
     <Profile />
-    <!-- <AboutMeButton /> -->
     <RelevantText :relevantText="'Versatility and curiosity: exploring without\nlimits.'"/>
     <Experience />
     <RelevantText :relevantText="'A journey of constant evolution'"/>
     <CardListProjects/>
     <RelevantText :relevantText="'Lifelong learning: embracing knowledge at \nevery step'" />
     <CardListStudy />
+    <BottomBar />
   </main>
 </template>
 

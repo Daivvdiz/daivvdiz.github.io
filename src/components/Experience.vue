@@ -28,6 +28,13 @@
         padding: 3rem 0;
     }
 
+    .iconContainer {
+        display: flex;
+        width: 100%;
+        overflow-x: hidden;
+        justify-content: space-evenly
+    }
+
     .carouselContainer a:hover {
         filter: invert(.4)
     }

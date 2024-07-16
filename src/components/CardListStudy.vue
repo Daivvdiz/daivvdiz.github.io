@@ -35,15 +35,3 @@ import StudyCard from './Card.vue'
     }
   };
 </script>
-
-<style scoped>
-@media screen and (min-width: 1024px){
-  .topicCardsContainer {
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: space-evenly;
-    margin: 5vh 0;
-  }
-}
-</style>

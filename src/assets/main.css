@@ -2,14 +2,11 @@
   font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 0;
+  color: #FFFFFF;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 1024px){
-  * {
-    color: #FFFFFF;
-    font-weight: 400;
-  }
-  
   html, body {
     -ms-overflow-style: none;
     scrollbar-width: none;

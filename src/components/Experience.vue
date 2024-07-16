@@ -43,6 +43,7 @@
         display: flex;
         width: 100%;
         align-items: center;
+        justify-content: center;
         padding: 5rem 0;
     }
 
@@ -51,11 +52,11 @@
         width: 100%;
         overflow-x: scroll;
     }
-
+    
     .iconItem {
         display: flex;
-        width: 400px;
-        margin: 0 3rem;
+        width: 350px;
+        margin: 1rem;
         justify-content: center;
         align-items: center;
     }

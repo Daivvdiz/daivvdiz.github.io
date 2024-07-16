@@ -10,7 +10,7 @@ import BottomBar from '../components/BottomBar.vue';
 
 <template>
   <main>
-    <TopBar v-if="showTopBar"/>
+    <TopBar v-if="showBar"/>
     <Profile />
     <RelevantText :relevantText="'Versatility and curiosity: exploring without\nlimits.'"/>
     <Experience />
@@ -18,7 +18,7 @@ import BottomBar from '../components/BottomBar.vue';
     <CardListProjects/>
     <RelevantText :relevantText="'Lifelong learning: embracing knowledge at \nevery step'" />
     <CardListStudy />
-    <BottomBar />
+    <BottomBar v-if="!showBar"/>
   </main>
 </template>
 
@@ -69,10 +69,26 @@ main {
       Slogan: RelevantText,
       TopBar,
     },
+    data() {
+      return {
+        windowWidth: window.innerWidth
+      };
+    },
     computed: {
-      showTopBar() {
-        return this.windowWidth >= 1024;
+      showBar() {
+        return this.windowWidth > 1023;
       }
     },
+    created() {
+      window.addEventListener('resize', this.handleResize);
+    },
+    beforeDestroy() {
+      window.removeEventListener('resize', this.handleResize);
+    },
+    methods: {
+      handleResize() {
+        this.windowWidth = window.innerWidth;
+      }
+    }
   };
 </script>

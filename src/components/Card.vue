@@ -1,7 +1,7 @@
 <template>
     <div class="cardContainer">
         <div class="topicCard">
-        <h1>{{ name }}</h1>
+            <h1>{{ name }}</h1>
             <div class="projectsContainer">
                 <ul>
                     <li v-for="(content, index) in contents" :key="index"><a :href="routeProfile[index]" target="_blank">{{ '→ '+content }}</a></li>
@@ -40,7 +40,8 @@
         padding: 1px;
         background-color: #FFFFFF;
         border-radius: 1rem;
-        width: 20%;
+        margin: 0 3rem;
+        width: 30%;
     }
     
     .topicCard {

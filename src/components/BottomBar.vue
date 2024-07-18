@@ -35,12 +35,13 @@
     }
 
     .infoContainer {
-        margin-left: 5rem;
+        margin-left: 5vw;
     }
 
     .infoContainer>div {
         display: flex;
         margin: 1rem 0;
+        margin-left: 3vw;
         align-items: center;
         justify-content: start;
     }
